@@ -1,0 +1,547 @@
+@import "inputmenu.scss";
+@import "about.scss";
+@import "gallery.scss";
+@import "contact.scss";
+@import "booktable.scss";
+
+$background: #0f0f0f;
+$btncolor: #232d3f;
+$listcolor: #f9f9f9;
+$text: #fff;
+$pfontSize: 16px;
+$fontColorBrown: brown;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $text;
+}
+
+body {
+  background-color: $background;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: $pfontSize;
+}
+
+// ===========> Media query for 400px
+@media screen and (min-width: 400px) {
+  /* Styles for screens with a minimum width of 400px */
+
+  /* ========================Header ====================  */
+  header {
+    width: 100%;
+    position: relative;
+    .navbar {
+      position: fixed;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: start;
+      padding: 0.5rem;
+      z-index: 50;
+
+      .navbar-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        .foodlogo {
+          font-size: 1.6rem;
+          font-weight: 900;
+          color: brown;
+          width: 100%;
+        }
+        img {
+          background-color: white;
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .nav-menu {
+        .list {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: start;
+          width: 384px;
+          font-size: 1.2rem;
+          display: none;
+        }
+        .list-item {
+          a:hover {
+            text-decoration: underline;
+            color: $fontColorBrown;
+          }
+        }
+      }
+
+      div.booktable {
+        .btnbook {
+          background-color: $btncolor;
+          margin-top: 0.4rem;
+          padding: 0.6rem;
+          font-size: 2rem;
+          width: 150px;
+          display: none;
+        }
+
+        .btnbook:hover {
+          background-color: red;
+          inset: 0.8rem;
+        }
+      }
+    }
+
+    div.header-main {
+      position: relative;
+      padding: 0rem 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-direction: column;
+
+      div.main-left {
+        // border:2px solid red;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 4rem;
+        width: 400px;
+
+        h1 {
+          font-size: 1.8rem;
+          color: brown;
+          padding-bottom: 1rem;
+        }
+
+        p {
+          padding-bottom: 1rem;
+        }
+        button {
+          padding: 0.6rem;
+          border-radius: 0.2rem;
+          font-size: 1rem;
+          width: 200px;
+          margin: 4px;
+        }
+        .aboutbtn {
+          background-color: brown;
+        }
+        .menubtn {
+          background-color: brown;
+        }
+        button:hover {
+          background-color: red;
+          inset: 0.8rem;
+        }
+      }
+      div.main-right {
+        // border: 2px solid red;
+        max-width: 100%;
+        display: flex;
+
+        img {
+          margin: auto;
+          width: 300px;
+          height: 300px;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+  /* ======================== Main Content ====================  */
+  .main-content {
+    width: 100%;
+    padding: 1rem;
+    min-width: 400px;
+    background-color: #16161a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div.dish-img {
+      max-width: 350px;
+    }
+
+    div.dish-content {
+      // border: 2px solid red;
+      padding: 0 4rem;
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      h2 {
+        font-size: 1.8rem;
+        color: brown;
+        padding-bottom: 1rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+        font-size: $pfontSize;
+      }
+      button {
+        padding: 0.6rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        width: 200px;
+        margin: 4px;
+        background-color: brown;
+      }
+      button:hover {
+        background-color: red;
+        inset: 0.8rem;
+      }
+    }
+  }
+
+  /* ======================== Chef Content ====================  */
+  div.chef {
+    width: 100%;
+
+    div.chef-main {
+      h2.chef-main-head {
+        font-size: 1.8rem;
+        color: $fontColorBrown;
+        text-align: center;
+        margin: 15px 0;
+      }
+    }
+    div.chef-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      div.chef-1,
+      div.chef-2,
+      div.chef-3 {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        div.chef-photo {
+          width: 250px;
+          height: 250px;
+          border-radius: 20px;
+          background: #fff;
+
+          img {
+            width: 250px;
+            height: 250px;
+            padding: 6px;
+            overflow: hidden;
+          }
+          img:hover {
+            box-shadow: 2px 2px 5px 5px rgb(71, 77, 79);
+          }
+        }
+        div.chef-details {
+          padding-top: 10px;
+          width: 250px;
+          text-align: center;
+
+          p.chef-name {
+            font-weight: bold;
+            color: $fontColorBrown;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  /* ======================== Footer Content ====================  */
+  div.footer {
+    background-color: #16161a;
+    margin-top: 60px;
+    padding-top: 40px;
+
+    div.footer-content {
+      margin: auto;
+      display: flex;
+      max-width: 600px;
+      flex-direction: column;
+      align-items: center;
+      div.contents {
+        background-color: #0f0f0f;
+        padding: 15px;
+        width: 100%;
+        border-radius: 15px;
+        margin: 10px;
+        h2 {
+          color: brown;
+          font-size: 1rem;
+        }
+        ul {
+          li {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+    div.footer-copyright {
+      text-align: center;
+      p {
+        font-size: 0.8rem;
+        background-color: #0f0f0f;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+// ===========> Media query for 800px
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 800px */
+  header {
+    .navbar {
+      padding: 2rem 1rem;
+      flex-direction: row;
+      align-items: center;
+
+      .navbar-header {
+        .foodlogo {
+          color: brown;
+          font-size: 2.2rem;
+          width: 100%;
+        }
+        img {
+          display: none;
+        }
+      }
+
+      .nav-menu {
+        .list {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          width: 350px;
+        }
+      }
+
+      div.booktable {
+        .btnbook {
+          display: block;
+          padding: 0.6rem 0.4rem;
+          border-radius: 0.2rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    div.header-main {
+      padding: 8rem 2rem;
+      flex-direction: row;
+      div.main-left {
+        width: 700px;
+        margin-right: 20px;
+        h1 {
+          padding-bottom: 0.8rem;
+        }
+
+        p {
+          padding-bottom: 0.8rem;
+          font-size: 0.8rem;
+        }
+      }
+      div.main-right {
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+  .main-content {
+    flex-direction: row;
+    column-gap: 60px;
+
+    div.dish-content {
+      h2 {
+        padding-bottom: 0.5rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+      button {
+        padding: 0.6rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        width: 200px;
+        margin: 4px;
+        background-color: brown;
+      }
+      button:hover {
+        background-color: red;
+        inset: 0.8rem;
+      }
+    }
+  }
+
+  div.chef {
+    margin-top: 60px;
+    div.chef-list {
+      flex-direction: row;
+      div.chef-1,
+      div.chef-2,
+      div.chef-3 {
+        flex-direction: column;
+        div.chef-photo {
+          height: 350px;
+          background: #16161a;
+          img {
+            height: 350px;
+          }
+        }
+        div.chef-details {
+          p.chef-name {
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+  }
+
+  /* ======================== Footer Content ====================  */
+  div.footer {
+    padding-top: 50px;
+    div.footer-content {
+      max-width: 1000px;
+      flex-direction: row;
+      align-items: start;
+      div.contents {
+        width: 400px;
+        height: 200px;
+        margin: 5px;
+        h2 {
+          color: brown;
+          font-size: 1rem;
+          margin-bottom: 8px;
+        }
+        div.icons {
+          margin-top: 10px;
+          i {
+            margin-right: 5px;
+          }
+        }
+        ul {
+          li {
+            font-size: 0.85rem;
+            margin-bottom: 5px;
+          }
+        }
+      }
+    }
+    div.footer-copyright {
+      text-align: center;
+      p {
+        margin: 10px 0;
+        font-size: 0.8rem;
+      }
+    }
+  }
+}
+
+// ===========> Media query for 1200px
+@media screen and (min-width: 1200px) {
+  header {
+    .navbar {
+      padding: 2rem 5rem;
+
+      div {
+        .foodlogo {
+          color: brown;
+          font-size: 1rem;
+          width: 100%;
+        }
+      }
+
+      .nav-menu {
+        .list {
+          width: 450px;
+          font-size: 1rem;
+        }
+      }
+
+      div.booktable {
+        .btnbook {
+          padding: 0.6rem;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    div.header-main {
+      div.main-left {
+        width: 700px;
+        margin-right: 20px;
+        padding: 0 4rem;
+        h1 {
+          padding-bottom: 0.4rem;
+        }
+
+        p {
+          padding-bottom: 0.8rem;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .main-content {
+    padding: 2rem 5rem;
+    flex-direction: row;
+    column-gap: 10px;
+
+    div.dish-content {
+      width: 800px;
+      h2 {
+        padding-bottom: 0.5rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+        text-align: center;
+      }
+      button {
+        padding: 0.6rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        width: 200px;
+        margin: 4px;
+        background-color: brown;
+      }
+      button:hover {
+        background-color: red;
+        inset: 0.8rem;
+      }
+    }
+  }
+}

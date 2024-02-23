@@ -1,0 +1,77 @@
+@import url("output.css");
+@media screen and (min-width: 400px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu {
+    color: blue;
+    position: relative;
+    padding-top: 100px;
+  }
+  div.menu h2 {
+    margin: 50px 0;
+    font-size: 32px;
+    text-align: center;
+  }
+  div.menu div.menu-content {
+    display: grid;
+    margin: 20px 40px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  div.menu div.menu-content div.menu-item {
+    padding: 5px;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+  div.menu div.menu-content div.menu-item img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 5px;
+  }
+  div.menu div.menu-content div.menu-item div.details {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.menu div.menu-content div.menu-item div.details h3 {
+    color: rgb(228, 61, 61);
+  }
+  div.menu div.menu-content div.menu-item div.details p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  div.menu div.menu-content div.menu-item div.details button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 10px;
+    background-color: brown;
+  }
+  div.menu div.menu-content div.menu-item div.details button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu div.menu-content {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu div.menu-content {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+/*# sourceMappingURL=outputmenu.css.map */

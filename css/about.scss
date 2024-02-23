@@ -1,0 +1,55 @@
+// ===========> Media query for 400px
+@media screen and (min-width: 400px) {
+  div.about {
+    position: relative;
+    top: 150px;
+    margin-bottom: 200px;
+    h2{
+        text-align: center;
+        color: brown;
+        margin-bottom: 20px;
+        
+    }
+    div.part {   
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(40, 38, 38);
+      margin: 10px 40px;
+      padding: 20px;
+      border-radius: 20px;
+      div {
+        width: 250px;
+        margin: 10px auto;
+        figure {
+          img {
+            width: 100%;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===========> Media query for 400px
+@media screen and (min-width: 800px) {
+    div.about {
+        margin-bottom: 200px;
+      div.part {
+        width: 800px;
+        flex-direction: row;
+        margin: 0 auto 50px;
+        box-shadow: 2px 2px;
+        div {
+          width: 250px;
+          margin: auto;
+          figure {
+            img {
+              width: 100%;
+              border-radius: 15px;
+            }
+          }
+        }
+      }
+    }
+  }

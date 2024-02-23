@@ -1,0 +1,92 @@
+$background: #0f0f0f;
+$btncolor: #232d3f;
+$listcolor: #f9f9f9;
+$text: #fff;
+$pfontSize: 16px;
+$fontColorBrown: brown;
+
+// ===========> Media query for 400px
+@media screen and (min-width: 400px) {
+
+  div.menu {
+    position: relative;
+    top:150px;
+    margin-bottom: 250px;
+    h2 {
+      margin-bottom: 10px;
+      font-size: 2 * ($pfontSize);
+      text-align: center;
+    }
+    div.menu-content {
+      display: grid;
+      margin: 20px 40px;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+
+      div.menu-item {
+        padding: 5px;
+        background-color: rgb(40, 38, 38);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        width: 300px;
+        img {
+          height: 250px;
+          width: 250px;
+          margin-bottom: 5px;
+        }
+        div.details {
+          display: flex;
+          row-gap: 10px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h3 {
+            color: rgb(228, 61, 61);
+          }
+          p {
+            font-size: 0.8rem;
+            text-align: center;
+          }
+          button {
+            padding: 0.6rem;
+            border-radius: 0.2rem;
+            font-size: 1rem;
+            width: 200px;
+            margin: 10px;
+            background-color: brown;
+          }
+          button:hover {
+            background-color: red;
+            inset: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ===========> Media query for 800px
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu {
+    div.menu-content {
+      grid-template-columns: auto auto;
+      gap: 30px;
+    }
+  }
+}
+
+// ===========> Media query for 800px
+@media screen and (min-width: 1200px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu {
+    div.menu-content {
+      grid-template-columns: auto auto auto;
+    }
+  }
+}
+

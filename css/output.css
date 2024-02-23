@@ -1,0 +1,780 @@
+@media screen and (min-width: 400px) {
+  div.menu {
+    position: relative;
+    top: 150px;
+    margin-bottom: 250px;
+  }
+  div.menu h2 {
+    margin-bottom: 10px;
+    font-size: 32px;
+    text-align: center;
+  }
+  div.menu div.menu-content {
+    display: grid;
+    margin: 20px 40px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  div.menu div.menu-content div.menu-item {
+    padding: 5px;
+    background-color: rgb(40, 38, 38);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 300px;
+  }
+  div.menu div.menu-content div.menu-item img {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 5px;
+  }
+  div.menu div.menu-content div.menu-item div.details {
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.menu div.menu-content div.menu-item div.details h3 {
+    color: rgb(228, 61, 61);
+  }
+  div.menu div.menu-content div.menu-item div.details p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  div.menu div.menu-content div.menu-item div.details button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 10px;
+    background-color: brown;
+  }
+  div.menu div.menu-content div.menu-item div.details button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu div.menu-content {
+    grid-template-columns: auto auto;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Styles for screens with a minimum width of 400px */
+  div.menu div.menu-content {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media screen and (min-width: 400px) {
+  div.about {
+    position: relative;
+    top: 150px;
+    margin-bottom: 200px;
+  }
+  div.about h2 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 20px;
+  }
+  div.about div.part {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 38, 38);
+    margin: 10px 40px;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  div.about div.part div {
+    width: 250px;
+    margin: 10px auto;
+  }
+  div.about div.part div figure img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+@media screen and (min-width: 800px) {
+  div.about {
+    margin-bottom: 200px;
+  }
+  div.about div.part {
+    width: 800px;
+    flex-direction: row;
+    margin: 0 auto 50px;
+    box-shadow: 2px 2px;
+  }
+  div.about div.part div {
+    width: 250px;
+    margin: auto;
+  }
+  div.about div.part div figure img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+@media screen and (min-width: 400px) {
+  div.gallery {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto 200px;
+    max-width: 799px;
+  }
+  div.gallery div {
+    width: 100%;
+  }
+  div.gallery div img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  div.gallery {
+    grid-template-columns: auto auto;
+    max-width: 1200px;
+  }
+  div.gallery div {
+    width: 100%;
+  }
+  div.gallery div img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  div.gallery {
+    grid-template-columns: auto auto auto;
+    min-width: 1200px;
+  }
+  div.gallery div {
+    width: 100%;
+  }
+  div.gallery div img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 400px) {
+  div.contact {
+    position: relative;
+    top: 150px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 150px;
+  }
+  div.contact div.officecontact {
+    height: 400px;
+    background-color: rgb(40, 38, 38);
+    padding: 20px;
+    margin-bottom: 50px;
+    width: 350px;
+  }
+  div.contact div.officecontact h3 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 20px;
+  }
+  div.contact div.officecontact div.contact-details {
+    text-align: start;
+  }
+  div.contact div.officecontact div.contact-details p {
+    font-size: 1rem;
+  }
+  div.contact div.officecontact div.contact-details p span {
+    font-size: 1.2rem;
+    color: brown;
+  }
+  div.contact div.customercontact {
+    background-color: rgb(40, 38, 38);
+    padding: 20px;
+    margin-bottom: 50px;
+    height: 400px;
+  }
+  div.contact div.customercontact h3 {
+    text-align: center;
+    color: brown;
+    margin-bottom: 20px;
+  }
+  div.contact div.customercontact .customerdetails {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 auto;
+  }
+  div.contact div.customercontact div {
+    margin-bottom: 20px;
+  }
+  div.contact div.customercontact div input {
+    height: 35px;
+    border-radius: 5px;
+    padding: 4px;
+    color: #000;
+  }
+  div.contact div.customercontact button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 100px;
+    margin: 10px auto;
+    background-color: brown;
+  }
+  div.contact div.customercontact button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  div.contact {
+    flex-direction: row;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 150px;
+    height: 500px;
+  }
+}
+/* ========= Screen size 400px */
+@media screen and (min-width: 400px) {
+  div.book-table {
+    position: relative;
+    top: 150px;
+    height: 80vh;
+    margin: 0 30px 150px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  div.book-table div.book-table-head {
+    text-align: center;
+    margin: 30px;
+  }
+  div.book-table div.book-table-head h3 {
+    text-transform: capitalize;
+    color: brown;
+  }
+  div.book-table div.customer {
+    box-shadow: 2px 2px 5px 2px white;
+    transition: box-shadow 0.3s ease;
+    min-width: 350px;
+    max-width: 799px;
+    background-color: rgb(40, 38, 38);
+    padding: 20px;
+    margin: 0 auto 30px;
+  }
+  div.book-table div.customer form.customertabledetails {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 0 auto;
+  }
+  div.book-table div.customer form.customertabledetails div {
+    margin-bottom: 20px;
+  }
+  div.book-table div.customer form.customertabledetails div input {
+    height: 35px;
+    border-radius: 5px;
+    padding: 4px;
+    color: #000;
+  }
+  div.book-table div.customer form.customertabledetails button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 100px;
+    margin: 10px auto;
+    background-color: brown;
+  }
+  div.book-table div.customer form.customertabledetails button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+}
+/* ========= Screen size 800px */
+/* ========= Screen size 1200px */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  background-color: #0f0f0f;
+}
+
+button {
+  border: none;
+  text-decoration: none;
+  background: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 400px) {
+  /* Styles for screens with a minimum width of 400px */
+  /* ========================Header ====================  */
+  header {
+    width: 100%;
+    position: relative;
+  }
+  header .navbar {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 0.5rem;
+    z-index: 50;
+  }
+  header .navbar .navbar-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  header .navbar .navbar-header .foodlogo {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: brown;
+    width: 100%;
+  }
+  header .navbar .navbar-header img {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+  }
+  header .navbar .nav-menu .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    width: 384px;
+    font-size: 1.2rem;
+    display: none;
+  }
+  header .navbar .nav-menu .list-item a:hover {
+    text-decoration: underline;
+    color: brown;
+  }
+  header .navbar div.booktable .btnbook {
+    background-color: #232d3f;
+    margin-top: 0.4rem;
+    padding: 0.6rem;
+    font-size: 2rem;
+    width: 150px;
+    display: none;
+  }
+  header .navbar div.booktable .btnbook:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+  header div.header-main {
+    position: relative;
+    padding: 0rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  header div.header-main div.main-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4rem;
+    width: 400px;
+  }
+  header div.header-main div.main-left h1 {
+    font-size: 1.8rem;
+    color: brown;
+    padding-bottom: 1rem;
+  }
+  header div.header-main div.main-left p {
+    padding-bottom: 1rem;
+  }
+  header div.header-main div.main-left button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 4px;
+  }
+  header div.header-main div.main-left .aboutbtn {
+    background-color: brown;
+  }
+  header div.header-main div.main-left .menubtn {
+    background-color: brown;
+  }
+  header div.header-main div.main-left button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+  header div.header-main div.main-right {
+    max-width: 100%;
+    display: flex;
+  }
+  header div.header-main div.main-right img {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  /* ======================== Main Content ====================  */
+  .main-content {
+    width: 100%;
+    padding: 1rem;
+    min-width: 400px;
+    background-color: #16161a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-content div.dish-img {
+    max-width: 350px;
+  }
+  .main-content div.dish-content {
+    padding: 0 4rem;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .main-content div.dish-content h2 {
+    font-size: 1.8rem;
+    color: brown;
+    padding-bottom: 1rem;
+  }
+  .main-content div.dish-content p {
+    padding-bottom: 1rem;
+    font-size: 16px;
+  }
+  .main-content div.dish-content button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 4px;
+    background-color: brown;
+  }
+  .main-content div.dish-content button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+  /* ======================== Chef Content ====================  */
+  div.chef {
+    width: 100%;
+  }
+  div.chef div.chef-main h2.chef-main-head {
+    font-size: 1.8rem;
+    color: brown;
+    text-align: center;
+    margin: 15px 0;
+  }
+  div.chef div.chef-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  div.chef div.chef-list div.chef-1,
+  div.chef div.chef-list div.chef-2,
+  div.chef div.chef-list div.chef-3 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-photo,
+  div.chef div.chef-list div.chef-2 div.chef-photo,
+  div.chef div.chef-list div.chef-3 div.chef-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    background: #fff;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-photo img,
+  div.chef div.chef-list div.chef-2 div.chef-photo img,
+  div.chef div.chef-list div.chef-3 div.chef-photo img {
+    width: 250px;
+    height: 250px;
+    padding: 6px;
+    overflow: hidden;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-photo img:hover,
+  div.chef div.chef-list div.chef-2 div.chef-photo img:hover,
+  div.chef div.chef-list div.chef-3 div.chef-photo img:hover {
+    box-shadow: 2px 2px 5px 5px rgb(71, 77, 79);
+  }
+  div.chef div.chef-list div.chef-1 div.chef-details,
+  div.chef div.chef-list div.chef-2 div.chef-details,
+  div.chef div.chef-list div.chef-3 div.chef-details {
+    padding-top: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-details p.chef-name,
+  div.chef div.chef-list div.chef-2 div.chef-details p.chef-name,
+  div.chef div.chef-list div.chef-3 div.chef-details p.chef-name {
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 5px;
+  }
+  /* ======================== Footer Content ====================  */
+  div.footer {
+    background-color: #16161a;
+    margin-top: 60px;
+    padding-top: 40px;
+  }
+  div.footer div.footer-content {
+    margin: auto;
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+  }
+  div.footer div.footer-content div.contents {
+    background-color: #0f0f0f;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px;
+    margin: 10px;
+  }
+  div.footer div.footer-content div.contents h2 {
+    color: brown;
+    font-size: 1rem;
+  }
+  div.footer div.footer-content div.contents ul li {
+    font-size: 0.85rem;
+  }
+  div.footer div.footer-copyright {
+    text-align: center;
+  }
+  div.footer div.footer-copyright p {
+    font-size: 0.8rem;
+    background-color: #0f0f0f;
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 800px) {
+  /* Styles for screens with a minimum width of 800px */
+  header .navbar {
+    padding: 2rem 1rem;
+    flex-direction: row;
+    align-items: center;
+  }
+  header .navbar .navbar-header .foodlogo {
+    color: brown;
+    font-size: 2.2rem;
+    width: 100%;
+  }
+  header .navbar .navbar-header img {
+    display: none;
+  }
+  header .navbar .nav-menu .list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 350px;
+  }
+  header .navbar div.booktable .btnbook {
+    display: block;
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+  }
+  header div.header-main {
+    padding: 8rem 2rem;
+    flex-direction: row;
+  }
+  header div.header-main div.main-left {
+    width: 700px;
+    margin-right: 20px;
+  }
+  header div.header-main div.main-left h1 {
+    padding-bottom: 0.8rem;
+  }
+  header div.header-main div.main-left p {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+  }
+  header div.header-main div.main-right img {
+    border-radius: 50%;
+  }
+  .main-content {
+    flex-direction: row;
+    column-gap: 60px;
+  }
+  .main-content div.dish-content h2 {
+    padding-bottom: 0.5rem;
+  }
+  .main-content div.dish-content p {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .main-content div.dish-content button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 4px;
+    background-color: brown;
+  }
+  .main-content div.dish-content button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+  div.chef {
+    margin-top: 60px;
+  }
+  div.chef div.chef-list {
+    flex-direction: row;
+  }
+  div.chef div.chef-list div.chef-1,
+  div.chef div.chef-list div.chef-2,
+  div.chef div.chef-list div.chef-3 {
+    flex-direction: column;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-photo,
+  div.chef div.chef-list div.chef-2 div.chef-photo,
+  div.chef div.chef-list div.chef-3 div.chef-photo {
+    height: 350px;
+    background: #16161a;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-photo img,
+  div.chef div.chef-list div.chef-2 div.chef-photo img,
+  div.chef div.chef-list div.chef-3 div.chef-photo img {
+    height: 350px;
+  }
+  div.chef div.chef-list div.chef-1 div.chef-details p.chef-name,
+  div.chef div.chef-list div.chef-2 div.chef-details p.chef-name,
+  div.chef div.chef-list div.chef-3 div.chef-details p.chef-name {
+    font-weight: bolder;
+  }
+  /* ======================== Footer Content ====================  */
+  div.footer {
+    padding-top: 50px;
+  }
+  div.footer div.footer-content {
+    max-width: 1000px;
+    flex-direction: row;
+    align-items: start;
+  }
+  div.footer div.footer-content div.contents {
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+  }
+  div.footer div.footer-content div.contents h2 {
+    color: brown;
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  div.footer div.footer-content div.contents div.icons {
+    margin-top: 10px;
+  }
+  div.footer div.footer-content div.contents div.icons i {
+    margin-right: 5px;
+  }
+  div.footer div.footer-content div.contents ul li {
+    font-size: 0.85rem;
+    margin-bottom: 5px;
+  }
+  div.footer div.footer-copyright {
+    text-align: center;
+  }
+  div.footer div.footer-copyright p {
+    margin: 10px 0;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header .navbar {
+    padding: 2rem 5rem;
+  }
+  header .navbar div .foodlogo {
+    color: brown;
+    font-size: 1rem;
+    width: 100%;
+  }
+  header .navbar .nav-menu .list {
+    width: 450px;
+    font-size: 1rem;
+  }
+  header .navbar div.booktable .btnbook {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+  header div.header-main div.main-left {
+    width: 700px;
+    margin-right: 20px;
+    padding: 0 4rem;
+  }
+  header div.header-main div.main-left h1 {
+    padding-bottom: 0.4rem;
+  }
+  header div.header-main div.main-left p {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+  }
+  .main-content {
+    padding: 2rem 5rem;
+    flex-direction: row;
+    column-gap: 10px;
+  }
+  .main-content div.dish-content {
+    width: 800px;
+  }
+  .main-content div.dish-content h2 {
+    padding-bottom: 0.5rem;
+  }
+  .main-content div.dish-content p {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .main-content div.dish-content button {
+    padding: 0.6rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    width: 200px;
+    margin: 4px;
+    background-color: brown;
+  }
+  .main-content div.dish-content button:hover {
+    background-color: red;
+    inset: 0.8rem;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,52 @@
+// ===========> Media query for 400px
+@media screen and (min-width: 400px) {
+  div.gallery {
+    position: relative;
+    top: 150px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 auto 200px ;
+    max-width: 799px;
+    div {
+      width: 100%;
+
+      img {
+        width: 300px;
+        height: auto;
+        margin: 20px;
+      }
+    }
+  }
+}
+
+// ===========> Media query for 800px
+@media screen and (min-width: 800px) {
+  div.gallery {
+    grid-template-columns: auto auto;
+    max-width: 1200px;
+    div {
+      width: 100%;
+
+      img {
+        width: 300px;
+        height: auto;
+      }
+    }
+  }
+}
+
+// ===========> Media query for 400px
+@media screen and (min-width: 1200px) {
+  div.gallery {
+    grid-template-columns: auto auto auto;    
+    min-width: 1200px;
+    div {
+      width: 100%;
+      img {
+        width: 300px;
+        height: auto;
+      }
+    }
+  }
+}

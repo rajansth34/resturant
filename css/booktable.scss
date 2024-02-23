@@ -1,0 +1,69 @@
+/* ========= Screen size 400px */
+@media screen and (min-width: 400px) {
+  div.book-table {
+    position: relative;
+    top: 150px;
+    height: 80vh;
+    margin: 0 30px 150px;
+    padding: 0 10px;
+    // border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div.book-table-head {
+      //   border: 2px solid green;
+      text-align: center;
+      margin: 30px;
+      h3 {
+        text-transform: capitalize;
+        color: brown;
+      }
+    }
+
+    div.customer {
+      box-shadow: 2px 2px 5px 2px white;
+      transition: box-shadow 0.3s ease;
+      min-width: 350px;
+      max-width: 799px;
+      background-color: rgb(40, 38, 38);
+      padding: 20px;
+      margin: 0 auto 30px;
+      form.customertabledetails {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        margin: 0 auto;
+        div {
+          margin-bottom: 20px;
+          input {
+            height: 35px;
+            border-radius: 5px;
+            padding: 4px;
+            color: #000;
+          }
+        }
+        button {
+          padding: 0.6rem;
+          border-radius: 0.2rem;
+          font-size: 1rem;
+          width: 100px;
+          margin: 10px auto;
+          background-color: brown;
+        }
+        button:hover {
+          background-color: red;
+          inset: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+/* ========= Screen size 800px */
+@media screen and (min-width: 800px) {
+}
+
+/* ========= Screen size 1200px */
+@media screen and (min-width: 1200px) {
+}
