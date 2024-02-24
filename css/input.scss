@@ -41,7 +41,7 @@ p {
 }
 
 // ===========> Media query for 400px
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 300px) {
   /* Styles for screens with a minimum width of 400px */
 
   /* ========================Header ====================  */
@@ -69,24 +69,32 @@ p {
           color: brown;
           width: 100%;
         }
-        img {
-          background-color: white;
+        button {
           width: 30px;
           height: 30px;
+        }
+        button#hamburger{
+          display: block;
+        }
+        button#close{
+          display: none;
         }
       }
 
       .nav-menu {
         .list {
+          // border: 2px solid red;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           align-items: start;
-          width: 384px;
+          width: 100%;
           font-size: 1.2rem;
           display: none;
         }
         .list-item {
+          // border:2px solid red;
+          margin: 10px 0px;
           a:hover {
             text-decoration: underline;
             color: $fontColorBrown;
@@ -113,12 +121,14 @@ p {
 
     div.header-main {
       position: relative;
-      padding: 0rem 0;
+      top: 150px;
+      padding: 10px 0;
       width: 100%;
       display: flex;
       justify-content: space-around;
       align-items: center;
       flex-direction: column;
+      margin-bottom: 150px;
 
       div.main-left {
         // border:2px solid red;
@@ -129,6 +139,7 @@ p {
         align-items: center;
         padding: 0 4rem;
         width: 400px;
+        margin-bottom: 10px;
 
         h1 {
           font-size: 1.8rem;
@@ -331,7 +342,10 @@ p {
           font-size: 2.2rem;
           width: 100%;
         }
-        img {
+        button#hamburger{
+          display: none;
+        }
+        button#close{
           display: none;
         }
       }
